@@ -1,7 +1,70 @@
 @import "code";
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Open+Sans&display=swap');
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+header {
+  width: 100%;
+  background-color: #164194;
+  height: 75px;
+}
+
+body {
+  background-color: #164194;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+nav {
+  height: 100%;
+  color: white;
+}
+
+.nav-list {
+  display: flex;
+  gap: 16px;
+  height: 100%;
+  align-items: center;
+}
+
+a, h1, h2 {
+  font-family: 'Gabarito', cursive;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.nav-list a {
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+
+.nav-list a:hover {
+  background-color: #14377c;
+}
+
+.nav-list a:focus {
+  border: solid 1px white;
+}
+
+.nav-list li{
+  display: flex;
+}
+
+main {
+  background-color: #f3f5f9;
+  flex: 1;
+  padding: 42px 10%;
+}

@@ -1,4 +1,5 @@
 ---
+permalink: /
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -9,17 +10,14 @@
   <title>Maratona UFRN</title>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        a
-      </ul>
-    </nav>
-  </header>
-
+  {% include header.html %}
+  
   <div class="hero">
     <h1>Maratona de programação UFRN</h1>
-    <button>Telegram</button>
+    <button id="telegram">
+      <img src="/assets/icons/telegram.svg" alt="Telegram">
+      Grupo do telegram
+    </button>
   </div>
 
   <main>
