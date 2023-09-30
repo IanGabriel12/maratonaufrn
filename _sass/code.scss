@@ -1,6 +1,14 @@
+.highlight {
+  margin: 16px 0;
+}
+.highlight pre {
+  padding: 8px;
+  border-radius: 4px;
+}
 .highlight code, .highlight pre {
   color:#fdce93;
   background-color:#3f3f3f;
+  border-radius: 4px;
   }
   
   .highlight .hll {

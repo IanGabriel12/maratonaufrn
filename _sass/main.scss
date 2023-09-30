@@ -37,6 +37,7 @@ a, h1, h2 {
 
 p {
   font-family: 'Open Sans', sans-serif;
+  margin: 16px 0;
 }
 
 .nav-list a {
@@ -66,5 +67,10 @@ a:visited {
 main {
   background-color: #f3f5f9;
   flex: 1;
-  padding: 42px 10%;
+  padding: 42px 0;
+}
+
+.content {
+  max-width: 700px;
+  margin: auto;
 }
