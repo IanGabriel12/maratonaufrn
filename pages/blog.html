@@ -5,7 +5,7 @@ permalink: /blog
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/post.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/blog.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn" crossorigin="anonymous">
 
     <!-- The loading of KaTeX is deferred to speed up page rendering -->
@@ -21,11 +21,22 @@ permalink: /blog
     <main>
       <div class="content">
         <h1>Últimos posts</h1>
-        <ul>
+        <ul class="post-list">
           {% for post in site.posts %}
             <li>
-              <h2><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></h2>
-              {{ post.excerpt }}
+              <a href="{{ site.baseurl }}{{ post.url }}">
+                <div class="post-cover">
+                  {% if post.cover %}
+                    <img src="{{ post.cover }}"/>
+                  {% else %}
+                    <img src="{{ site.baseurl }}/assets/images/competidores.jpg" />
+                  {% endif %}
+                </div>
+                <div class="post-spoiler">
+                  <h2>{{ post.title }}</h2>
+                  <p>Por <b>{{ post.author }}</b> em <b>{{ post.date | date_to_string }}</b></p>
+                </div>
+              </a>
             </li>
           {% endfor %}
         </ul>

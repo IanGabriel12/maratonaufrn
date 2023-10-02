@@ -1,0 +1,51 @@
+---
+---
+@import "main";
+
+.post-list {
+  list-style-type: none;
+}
+.post-list a {
+  display: grid;
+  column-gap: 1.6rem;
+  grid-template-columns: 9.0rem auto;
+  grid-template-rows: 9.0rem;
+  margin-top: 1.6rem;
+  text-decoration: none;
+  padding: 1.6rem;
+  border-radius: 0.4rem;
+  box-shadow: 1rem 1rem 20px rgba(7, 3, 69, 0.121);
+  transition: transform ease 200ms;
+
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  h2 {
+    color: #164194;
+  }
+  b {
+    color: #164194;
+  }
+}
+
+.post-list a:hover {
+  transform: scale(1.009);
+}
+.post-list a:visited {
+  color: inherit;
+}
+
+.post-spoiler {
+  p {
+    margin-top: 0.8rem;
+  }
+}
+
+.post-cover {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0.8rem;
+}
